@@ -27,10 +27,10 @@ void coi_encode(int width, int height, string[][] pixels, File file) {
 }
 
 string[][] coi_make_canvas(int width, int height) {
-    string[][] canvas = new string[][](height+1);
+    string[][] canvas = new string[][](height);
     
     for (int i = 0; i < height; i++) {
-        canvas[i] = new string[width+1]; 
+        canvas[i] = new string[width]; 
         for (int j = 0; j < width; j++) {
             canvas[i][j] = "89898EFF"; // Initialize with a default hex color
         }
